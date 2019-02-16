@@ -40,5 +40,12 @@ flask: 1.0.2
 * **main.py:** Main python file containing the code to run the web application and process the input data
 * **README.md:** Readme file for the repo
 
+### Usage:
+1. Clone the repo
+2. Change/access the directory from command-line
+3. Run the command `python main.py` to start the web application
+4. Navigate to the [localhost website](http://localhost:5000)
+5. Enter un-punctuated text and click on "Punctuate" to make predictions
+
 ### Example Results:
 ![Example](./images/example.jpg)

@@ -1,0 +1,66 @@
+.about_head {
+    text-align: center !important;
+}
+.about_section {
+    text-align: center !important;
+}
+.btn-primary:hover, .btn-primary:active, .toggle{
+    background-color: red;
+}
+.error {
+    color: red;
+}
+.btn-primary {
+    border: black;
+    border-radius: 40px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.navbar-right{
+    margin-right: -340px;
+}
+.btn-primary {
+    margin-top: 5px;
+}
+.navbar-fixed-top {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.jumbotron { 
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+.highlighted {
+    background-color: #ff9933;
+    font-weight: bold;
+    color: white;
+}
+.upload-form {
+    background-color: white;
+}
+.btn-default {
+    position: relative;
+    height: 30px;
+    width: 150px;
+    background-color: #337ab7;
+    color: white;
+    text-align: auto;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #ff9933;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}

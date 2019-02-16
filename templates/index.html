@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+                
+<head>
+  <title>Punctuator 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='script/script.js')  }}"></script>
+</head>
+
+<body id="myPage">
+   <hr>
+
+   <div id="ptext" class="container-fluid sentence">
+        <form id="text_in" method="POST" enctype="multipart/form-data">
+        <h2>Punctuate Document:</h2>
+        <p><strong>Enter Document Below:</strong></p>
+        <div class="form-group">
+            <textarea id='text' name='entered_text' rows="5", cols="80"></textarea>
+        </div>
+        <p></p>
+        <button id="input_text" name="ptext_btn" type="button" class="btn btn-default">Punctuate</button>
+        </form>
+        <p></p>
+        <p><strong>Punctuated Document:</strong></p>
+        <div id="text_successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+        <div id="text_errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+    </div>
+
+</body>
+</html>

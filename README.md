@@ -1,7 +1,7 @@
 ## Flask web application to serve punctuation model
 
 ### Summary:
-Serving a pre-trained model using Flask. Allows users to visit the website to make puncutations on un-punctuated text.
+A simple Flask web application allowing users to visit and make punctuation on un-punctuated sentences.
 
 **Input:** Sentence without punctuation  
 **Output:** Sentence with predicted punctuations

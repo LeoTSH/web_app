@@ -47,6 +47,23 @@ def process_input(text):
     # Return padded sentence
     return padded_text
 
+def get_key(dic, val):
+    '''
+    Description:
+        - Returns key from dictionary based on value
+    
+    Args:
+        - dic: Dictionary of either labels or vocabularies
+        - val: Value of key-value pair in dictionary
+    
+    Returns:
+        - key: Dictionary key based on value
+    '''
+    # Iterate dictionary
+    for key, value in dic.items():
+        if value == val:
+            return key
+
 def make_prediction(processed_text):
     '''
     Description:
@@ -63,9 +80,7 @@ def make_prediction(processed_text):
     # Iterate tokenized text, extract corresponding text and append it to list
     for seq in processed_text:
         for word in seq:
-            for value, index in vocabs.items():
-                if word == index:
-                    words_seq.append(value)
+            words_seq.append(get_key(vocabs, word))
 
     # Make prediction on tokenized sentence
     prediction = model.predict(np.expand_dims(processed_text[0], axis=0))
@@ -77,9 +92,7 @@ def make_prediction(processed_text):
     # Iterate through extracted labels, extract corresponding label text and append it to list
     for labs in labels_seq:
         for lab in labs:
-            for value, index in labels.items():
-                if lab == index:
-                    restore_labels.append(value)
+            restore_labels.append(get_key(labels, lab))
 
     # Create list to store punctuated sentence
     restored_text = []         

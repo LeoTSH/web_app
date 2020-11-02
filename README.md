@@ -1,7 +1,8 @@
 ## Flask web application to serve punctuation model
 
 ### Summary:
-A simple Flask web application allowing users to visit and make punctuation on un-punctuated sentences.
+A simple Flask web application allowing users to visit and make punctuation on un-punctuated sentences.  
+Model used is based on https://github.com/LeoTSH/cnn_lstm_pos_tagger
 
 **Input:** Sentence without punctuation  
 **Output:** Sentence with predicted punctuations
